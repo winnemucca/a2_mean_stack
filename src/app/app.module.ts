@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { PostsService } from './posts.service';
 
@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import { AuthComponent } from './auth/auth.component';
 const ROUTES = [
   {
     path: '',
@@ -25,7 +26,8 @@ const ROUTES = [
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
