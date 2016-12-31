@@ -11,6 +11,8 @@ import { PostsComponent } from './posts/posts.component';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AuthComponent } from './auth/auth.component';
+import { routing } from './app.routing';
+
 const ROUTES = [
   {
     path: '',
@@ -33,7 +35,8 @@ const ROUTES = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES), // Add routes to the app
+    //RouterModule.forRoot(ROUTES), // Add routes to the app
+    routing,
     MaterialModule.forRoot()
   ],
   providers: [PostsService],
