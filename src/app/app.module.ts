@@ -12,30 +12,20 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AuthComponent } from './auth/auth.component';
 import { routing } from './app.routing';
+import { HomeComponent } from './home/home.component';
 
-const ROUTES = [
-  {
-    path: '',
-    redirectTo: 'posts',
-    pathMatch: 'full'
-  },
-  {
-    path: 'posts',
-    component: PostsComponent
-  }
-];
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    AuthComponent
+    AuthComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    //RouterModule.forRoot(ROUTES), // Add routes to the app
     routing,
     MaterialModule.forRoot()
   ],
