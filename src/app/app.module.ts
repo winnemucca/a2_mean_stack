@@ -13,6 +13,7 @@ import 'hammerjs';
 import { AuthComponent } from './auth/auth.component';
 import { routing } from './app.routing';
 import { HomeComponent } from './home/home.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     PostsComponent,
     AuthComponent,
-    HomeComponent
+    HomeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
